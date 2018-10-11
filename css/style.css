@@ -655,6 +655,8 @@ iframe {
   text-transform: uppercase;
   font-weight: bold !important;
   font-family: "PT Sans", sans-serif;
+    position: relative;
+    top: 35px;
 }
 
 .main_slider_area .rev_slider .tp-revslider-mainul li .slider_text_box2 .secand_text {
@@ -680,12 +682,19 @@ iframe {
   background: #fff;
 }
 
+.tp-mask-wrap{
+   
+}
+.tp-caption first_text{
+     position: relative;
+    top: 35px !important;
+}
 /* End Main Slider area css
 ============================================================================================ */
 /* Quoto Slider area css
 ============================================================================================ */
 .quoto_slider_area {
-  background: url(../img/quoto-slider-bg.jpg) no-repeat scroll center center;
+  background: url(../img/ges_footer_bg.png) no-repeat scroll center center;
   background-size: cover;
   position: relative;
   z-index: 3;
@@ -733,7 +742,7 @@ iframe {
 }
 
 .quoto_slider_area .quoto_slider_inner .quoto_slider .item h4 span {
-  color: #ffcd00;
+  color: #fff;
 }
 
 .quoto_slider_area .quoto_slider_inner .quoto_slider .item p {
@@ -771,8 +780,8 @@ iframe {
 }
 
 .quoto_slider_area .quoto_slider_inner .owl-prev:hover, .quoto_slider_area .quoto_slider_inner .owl-next:hover {
-  border-color: #ffcd00;
-  background: #ffcd00;
+  border-color: #0f84e7;
+  background: #0f84e7;
 }
 
 .quoto_slider_area .quoto_slider_inner .owl-prev {
@@ -952,12 +961,12 @@ iframe {
 .get_bg_btn {
   display: inline-block;
   padding: 0px 35px;
-  border: 2px solid #ffcd00;
+  border: 2px solid #0f84e7;
   line-height: 50px;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
-  color: #31353d;
+  color: #fff;
   font-weight: bold;
   position: relative;
   z-index: 2;
@@ -971,7 +980,7 @@ iframe {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #ffcd00;
+  background: #0f84e7;
   height: 250px;
   width: 300px;
   border-radius: 50%;
@@ -986,7 +995,7 @@ iframe {
 }
 
 .get_bg_btn:hover {
-  color: #ffcd00;
+  color: #0f84e7;
 }
 
 .get_bg_btn:hover:before {
@@ -1202,7 +1211,7 @@ iframe {
 /* Subscribe area css
 ============================================================================================ */
 .subscribe_area {
-  background: #ffcd00;
+  background: #0f84e7;
   overflow: hidden;
   padding: 40px 0px;
 }
@@ -1729,7 +1738,7 @@ iframe {
 .service2_inner .service2_item:hover .service2_item_inner {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: #ffcd00;
+  background: #0f84e7;
 }
 
 .service2_inner .service2_item:hover .service2_item_inner .service2_item_inner_content {
@@ -2444,7 +2453,7 @@ iframe {
 }
 
 .clients_slider .item:hover {
-  border-color: #ffcd00;
+  border-color: #0f84e7;
 }
 
 /* End Clients area css
@@ -3783,7 +3792,7 @@ iframe {
   text-transform: uppercase;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
-  color: #ffcd00;
+  color: #0f84e7;
 }
 
 .about_widget p {
@@ -3860,7 +3869,7 @@ iframe {
 
 .give_us_widget h5 {
   font-size: 24px;
-  color: #ffcd00;
+  color: #0f84e7;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -3868,7 +3877,7 @@ iframe {
   font-size: 32px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: #ffcd00;
+  color: #fff;
   padding: 23px 0px 12px 0px;
 }
 
@@ -3912,7 +3921,7 @@ iframe {
 }
 
 .footer_menu li:hover a, .footer_menu li.active a {
-  color: #ffcd00;
+  color: #0f84e7;
 }
 
 /* End Footer area css
