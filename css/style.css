@@ -1,4 +1,6 @@
-
+.flip-card-front img{
+    opacity: 0.4;
+}
 /*contact form css ========================================================*/
 
 .fnc {
@@ -705,7 +707,11 @@ body, p, h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
+    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
+
+
+
 #success {
   display: none;
 }
@@ -856,7 +862,6 @@ iframe {
   font-family: "PT Sans", sans-serif;
   color: #31353d;
   font-weight: bold;
-  text-transform: uppercase;
   position: relative;
   z-index: 2;
 }
@@ -965,8 +970,8 @@ iframe {
   transition: transform 500ms ease, background 500ms ease;
   transition: transform 500ms ease, background 500ms ease, -webkit-transform 500ms ease;
   -webkit-transition: transform 500ms ease, background 500ms ease;
-  -webkit-box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow:0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+ box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
   z-index: 999;
 }
 
@@ -1212,8 +1217,10 @@ iframe {
 }
 
 .transparent_menu .main_menu_area .navbar.navbar-default {
+/*
   border-bottom: 1px solid rgba(186, 186, 186, 0.4);
   border-radius: 0px;
+*/
 }
 
 .transparent_menu .main_menu_area .navbar.navbar-default .nav.navbar-nav.navbar-right li a {
@@ -2249,6 +2256,9 @@ iframe {
 ============================================================================================ */
 .best_company_area {
   padding: 60px 0px;
+    box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
+    -webkit-box-shadow: box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
+     
 }
 
 .b_companu_l_text h4 {
@@ -2319,7 +2329,7 @@ iframe {
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
-      padding: 60px 20px 16px 20px;
+      padding: 12px 20px 16px 20px;
 }
 
 .flip-card-front .heading {
@@ -2353,6 +2363,7 @@ End Best Company area css
 .our_service_area2 {
   background: #f5f5f5;
   padding: 100px 0px 65px 0px;
+       box-shadow: 0px 10px 30px 3px rgba(10,10,10,0.5);
 }
 
 .our_service_area2 .main_c_b_title {
@@ -2877,6 +2888,7 @@ End Best Company area css
 .our_team_area2 {
   background: #f5f5f5;
   padding: 100px 0px 76px 0px;
+box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
 }
 
 .our_team_area2 .main_c_b_title {
@@ -2986,6 +2998,7 @@ End Best Company area css
 ============================================================================================ */
 .latest_news_area {
   padding: 100px 0px 65px 0px;
+box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
 }
 
 .latest_news_area .main_c_b_title {
@@ -4221,7 +4234,6 @@ End Best Company area css
 
 .f_content_item h4 {
   font-size: 18px;
-  text-transform: uppercase;
   color: #31353d;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -4468,9 +4480,9 @@ End Best Company area css
 
 .footer_widgets_area.footer_bg {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(49, 53, 61, 0.96)), to(rgba(49, 53, 61, 0.96))), url(../img/footer-bg.jpg) no-repeat scroll center center;
-  background: -webkit-linear-gradient(bottom, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../img/footer-bg.jpg) no-repeat scroll center center;
-  background: -o-linear-gradient(bottom, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../img/footer-bg.jpg) no-repeat scroll center center;
-  background: linear-gradient(0deg, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../img/footer-bg.jpg) no-repeat scroll center center;
+  background: -webkit-linear-gradient(bottom, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../slider-image1.png) no-repeat scroll center center;
+  background: -o-linear-gradient(bottom, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../slider-image1.png) no-repeat scroll center center;
+  background: linear-gradient(0deg, rgba(49, 53, 61, 0.96), rgba(49, 53, 61, 0.96)), url(../img/slider-image1.png) no-repeat scroll center center;
   background-size: cover;
 }
 
