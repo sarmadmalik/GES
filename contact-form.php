@@ -10,7 +10,7 @@ $header .= "Content-Type: text/plain";
 $comment .= "This message was sent by: " . $name . " \r\n";
 $comment .= "His email is: " . $email . " \r\n";
 $comment .= "The message is: ". $message ." \r\n";
-$for = 'blackmaxxgdl18@hotmail.com';
+$for = 'gsarmadmalik@gmail.com';
 $subject = 'You have a new email from your website!';
 mail($for, $subject, utf8_decode($comment), $header);
 // server response!
