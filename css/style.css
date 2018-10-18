@@ -8,14 +8,38 @@
     color: #fff!important;
     border-radius: 2px;
     box-shadow: 0 2px 2.7px .1px rgba(0, 0, 0, .24)!important;
-        background: #0f84e7;
+        background: #263271;
+    position: relative;
+        top: 40px;
+    width: 160px;
+    transition: .1s ease;
 }
 
 .btn-team:hover,
 .btn-team:focus,
 .btn-team:active {
-    box-shadow: 0 4px 4.7px .3px rgba(0, 0, 0, .24)!important
+    box-shadow: 0 4px 4.7px .3px rgba(0, 0, 0, .24)!important;
+     transition: .1s ease;
 }
+
+.slider-para{
+ font-size: 30px;
+    color: #FFf;
+    letter-spacing: 5px;
+}
+
+.b_company_image img{
+    position: relative;
+    top: 90px;
+}
+
+.about_widget{
+    margin-top: 20px;
+}
+.top-header-icon{
+   margin-right: 30px; 
+}
+
 /*contact form css ========================================================*/
 
 .fnc {
@@ -172,7 +196,7 @@
 }
 .fnc-slide__heading {
   margin-bottom: 10px;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
 }
 .fnc-slide__heading-line {
   overflow: hidden;
@@ -723,7 +747,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
     padding-left: 100px;
     padding-right: 100px;
     height: 90px;
-    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+/*    box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);*/
 }
 
 
@@ -1004,6 +1028,7 @@ iframe {
 
 .header_top_area {
   background: #1e2126;
+  
 }
 
 .header_top_area .pull-left a {
@@ -1014,6 +1039,7 @@ iframe {
   margin-right: 60px;
   position: relative;
   display: inline-block;
+    text-decoration: none
 }
 
 .header_top_area .pull-left a:before {
@@ -1639,7 +1665,8 @@ iframe {
 }
 
 .get_bg_btn:hover {
-  color: #0f84e7;
+  color: #FFF;
+    text-decoration: none;
 }
 
 .get_bg_btn:hover:before {
@@ -2285,7 +2312,7 @@ iframe {
   font-size: 30px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
-  color: #343434;
+  color: #263271;
   text-transform: uppercase;
 }
 
@@ -4254,7 +4281,7 @@ box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
 
 .f_content_item h4 {
   font-size: 18px;
-  color: #31353d;
+  color: #263271;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 25px 0px 15px 0px;
@@ -4595,6 +4622,8 @@ box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
   font-size: 24px;
   color: #0f84e7;
   font-family: "Open Sans", sans-serif;
+        margin: 0;
+    margin-top: 15px;
 }
 
 .give_us_widget h4 {
@@ -4602,17 +4631,17 @@ box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   color: #fff;
-  padding: 23px 0px 12px 0px;
+  padding:15px 0px 0px 0px;
 }
 
 .give_us_widget a {
-  margin-top: 17px;
+/*  margin-top: 17px;*/
 }
 
 .footer_copy_right {
   text-align: center;
-  background: #262a31;
-  padding: 41px 0px;
+  background: #263271;
+  padding: 15px 0px;
 }
 
 .footer_copy_right h4 {
@@ -4635,17 +4664,19 @@ box-shadow: 0 0 73px rgba(10, 10, 10,0.07);
 }
 
 .footer_menu li a {
-  color: #afafaf;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
+    
 }
 
 .footer_menu li:last-child {
-  margin-right: 0px;
+  margin-top: 8px;
 }
 
 .footer_menu li:hover a, .footer_menu li.active a {
   color: #0f84e7;
+    text-decoration: none;
 }
 
 /* End Footer area css
@@ -4807,3 +4838,43 @@ OUr team css start
     margin-top: 30px;
     text-align: center;
 }
+
+
+/*Animation*/
+/*
+.b_company_image img{
+    opacity: 0;
+    animation-delay: .8s
+}
+ .slider_btn{
+    opacity: 0;
+    animation-delay: .5s;
+        
+}
+.animation1,.animation2,.animation3{
+    opacity: 0;
+}
+.animation1{
+   animation-delay: .3s; 
+}
+
+.animation2{
+   animation-delay: .8;
+}
+
+.animation3{
+   animation-delay: 1.2s; 
+}
+
+# sourceMappingURL=style.css.map 
+
+.main_c_b_title h2,.main_c_b_title h2,.feature_content .f_content_item{
+    opacity: 0;
+    animation-delay: .4s;
+}
+
+.team_slider2_inner .owl-stage-outer{
+     opacity: 0;
+    animation-delay: .8s;
+}
+*/
