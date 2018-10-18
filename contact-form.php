@@ -1,21 +1,22 @@
 <?php
 
-    $name = $_Post['name'];
-    $visitor_email =$_Post['email'];
-    $message = $_POST['message'];
-
-    $email_from = 'gsarmadmalik@gmail.com';
-    $emai_subject = 'New Form Submission';
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                    "User Message: $message.\n";
-
-    $to = "gsarmadmalik@gmail.com";
-    $headers = "From: $email_from \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
-    
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("Location: contact2.html");
+    $name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['messageField'];
+$header = 'From: ' . $email . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .=  "Mime-Version: 1.0  \r\n";
+$header .= "Content-Type: text/plain";
+$comment .= "This message was sent by: " . $name . " \r\n";
+$comment .= "His email is: " . $email . " \r\n";
+$comment .= "The message is: ". $message ." \r\n";
+$for = 'blackmaxxgdl18@hotmail.com';
+$subject = 'You have a new email from your website!';
+mail($for, $subject, utf8_decode($comment), $header);
+// server response!
+$nombre = $_POST['nombre'];
+echo json_encode(array(
+	'message' => sprintf('Your email has been received %s', $name),
+));
 
 ?>
