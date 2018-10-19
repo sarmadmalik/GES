@@ -129,7 +129,12 @@
      <div class="container">
          <div class="row">
               <div class="col-md-6 col-md-offset-3">
+<<<<<<< HEAD
+ 
+             <form>
+=======
                  <form id="form" method="post" action="contact-form.php" class="form-horizontal">
+>>>>>>> 98d561e84ee1322383602e72c92a6956f096383c
                     <div class="form-group">
                      <input class="form-control" type="text" placeholder="Name" name="name" required>
                      </div>
@@ -142,6 +147,7 @@
                      <div class="form-group">
                      <input class="btn btn-default" type="submit" value="Send" >
                          </div>
+
                  </form>
              </div>
          </div>
@@ -235,7 +241,36 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
 
         
-        
+        <script>
+    
+   var form = document.getElementsByTagName('form')[0];
+   form.addEventListener('submit',contact,false);
+   function contact(e) {
+      // Prevent Default Form Submission
+      e.preventDefault();
+
+      var target = e.target || e.srcElement;
+      var i = 0;
+      var message = '';
+
+      // Loop Through All Input Fields
+      for(i = 0; i < target.length; ++i) {
+         // Check to make sure it's a value. Don't need to include Buttons
+         if(target[i].type != 'text' && target[i].type != 'textarea') {
+                // Skip to next input since this one doesn't match our rules
+            continue;
+         }
+
+         // Add Input Name and value followed by a line break
+         message += target[i].name + ': ' + target[i].value + "\r\n";
+      }
+      // Modify the hidden body input field that is required for the mailto: scheme
+      target.elements["body"].value = message;
+
+      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+      this.submit();
+   }
+        </script>
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
