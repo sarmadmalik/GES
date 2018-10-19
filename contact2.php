@@ -1,4 +1,24 @@
-<!DOCTYPE html>
+<?php
+if(isset($_POST['submit']))
+{
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+$to = "gsarmadmalik@gmail.com";
+$headers = "From: $name<$email>";
+$message = "Name: $name \n\nEmail: $email \n\nMessage: $message";
+
+if(mail($to, $name, $message, $headers))
+{echo "Email sent";}
+else
+{
+echo "error please try again";
+}
+
+}
+?>
+
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -122,6 +142,7 @@
             </div>
         </header>
         <!--================Header Area =================-->
+ 
  <div class="container">
 <section id="support" class="support animated bounceInLeft">
      <h2 class="text-center text-uppercase" >Contact Us</h2>
@@ -129,12 +150,7 @@
      <div class="container">
          <div class="row">
               <div class="col-md-6 col-md-offset-3">
-<<<<<<< HEAD
- 
-             <form>
-=======
-                 <form id="form" method="post" action="contact-form.php" class="form-horizontal">
->>>>>>> 98d561e84ee1322383602e72c92a6956f096383c
+                <form id="form" method="post" action="" class="form-horizontal">
                     <div class="form-group">
                      <input class="form-control" type="text" placeholder="Name" name="name" required>
                      </div>
@@ -145,10 +161,11 @@
                      <textarea class="form-control" placeholder="Message" name="message" required></textarea>
                      </div>
                      <div class="form-group">
-                     <input class="btn btn-default" type="submit" value="Send" >
+                     <input class="btn btn-default" type="submit" value="Send" name="submit" >
                          </div>
 
                  </form>
+                 
              </div>
          </div>
      </div>
@@ -241,36 +258,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
 
         
-        <script>
-    
-   var form = document.getElementsByTagName('form')[0];
-   form.addEventListener('submit',contact,false);
-   function contact(e) {
-      // Prevent Default Form Submission
-      e.preventDefault();
-
-      var target = e.target || e.srcElement;
-      var i = 0;
-      var message = '';
-
-      // Loop Through All Input Fields
-      for(i = 0; i < target.length; ++i) {
-         // Check to make sure it's a value. Don't need to include Buttons
-         if(target[i].type != 'text' && target[i].type != 'textarea') {
-                // Skip to next input since this one doesn't match our rules
-            continue;
-         }
-
-         // Add Input Name and value followed by a line break
-         message += target[i].name + ': ' + target[i].value + "\r\n";
-      }
-      // Modify the hidden body input field that is required for the mailto: scheme
-      target.elements["body"].value = message;
-
-      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
-      this.submit();
-   }
-        </script>
+  
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -278,24 +266,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
         <!-- Rev slider js -->
-        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+       
         
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="vendors/counterup/waypoints.min.js"></script>
-        <script src="vendors/counterup/jquery.counterup.min.js"></script>
-        <script src="vendors/flex-slider/jquery.flexslider-min.js"></script>
+       
       
         <!--gmaps Js-->
+<!--
         <script src="js/bootstrapValidator.min.js"></script>
         <script src="js/jquery.waypoints.min.js"></script>
+-->
         
         <script src="js/theme.js"></script>
         <script src="js/custom-animation.js"></script>
